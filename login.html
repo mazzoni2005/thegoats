@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/CSSlogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="./assets/logo2.png" id="logo"></a>
+            <ul class="nav-list">
+                <li> <a href="lbj.html"><b> LeBron James </b></a></li>
+                <li> <a href="./mj.html"><b> Michael Jordan </b></a></li>
+                <li> <a href="./quiz.html"><b> Quiz </b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main">
+        <div class="card">
+            <div class="tittleLogar">
+                <b>Seja bem-vindo!</b>
+            </div>
+            <div class="grupo_inputs">
+                <div>
+                    <label><b>Email:</b></label>
+                    <input id="email" placeholder="neymarjr@gmail.com">
+                </div>
+                <div>
+                    <label><b>Senha</b></label>
+                    <input id="senha" placeholder="********">
+                </div>
+                <div>
+                    
+                </div>
+                <div class="coluna">
+                    <button class="login" onclick ="logar()">Entrar</button>
+                
+                <a href="./cadastro.html">Ainda não tenho uma conta</a>
+                </div>
+                <!-- <button onclick="window.location.href='cadastro.html';"  
+                class="voltarLogin"><u>Ainda não tenho uma conta</u></button> -->
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
+<script>
+    function logar(){
+        var email = email.value
+        var senha = senha.value
+        if (email == ""){
+            alert("Por favor, insira um email.")
+        } else{
+            
+        }
+        window.location.href='quiz.html';
+    }
+</script>
